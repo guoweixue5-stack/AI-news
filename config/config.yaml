@@ -68,12 +68,23 @@ platforms:
       name: "知乎"
     - id: "juejin"
       name: "稀土掘金"
+    - id: "weibo"
+      name: "微博热搜"
     - id: "bilibili"
       name: "B站热搜"
-    - id: "baidu"
-      name: "百度热搜"
+    - id: "douyin"
+      name: "抖音热搜"
     - id: "toutiao"
       name: "今日头条"
+    - id: "baidu"
+      name: "百度热搜"
+    - id: "tieba"
+      name: "贴吧"
+    - id: "thepaper"
+      name: "澎湃新闻"
+    - id: "ifeng"
+      name: "凤凰网"
+
 
 
 
@@ -89,18 +100,25 @@ platforms:
 rss:
   enabled: true
   feeds:
-    - id: "arxiv-ai"
-      name: "ArXiv AI 论文"
-      url: "https://arxiv.org/rss/cs.AI"
-    - id: "huggingface-blog"
-      name: "HuggingFace Blog"
-      url: "https://huggingface.co/blog/feed.xml"
-    - id: "stability-blog"
-      name: "Stable Diffusion 官方博客"
-      url: "https://stability.ai/blog/rss.xml"
-    - id: "github-trending-ai"
-      name: "GitHub Trending AI"
-      url: "https://github.com/trending/ai?since=daily"
+    - id: "pubmed-recent"
+      name: "PubMed 最新文献"
+      url: "https://pubmed.ncbi.nlm.nih.gov/rss/search/1r5KdY0fVn5b14j9H10q87X8b72RqQnH4n83j3XgY6119U44/?limit=20"
+    - id: "mediecogroup"
+      name: "医咖会（临床科研、SCI写作）"
+      url: "https://www.mediecogroup.com/feed/"
+    - id: "home-for-researchers"
+      name: "科研者之家（医学科研工具）"
+      url: "https://www.home-for-researchers.com/feed"
+    - id: "paperpal-blog"
+      name: "Paperpal官方博客（医学稿件润色）"
+      url: "https://www.paperpal.com/blog/feed/"
+    - id: "writefull-blog"
+      name: "Writefull学术写作博客"
+      url: "https://writefull.com/blog/feed/"
+    - id: "consensus-blog"
+      name: "Consensus 文献检索工具更新"
+      url: "https://consensus.app/blog/rss.xml"
+
 
 
     # 自定义源示例
