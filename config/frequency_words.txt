@@ -1,23 +1,28 @@
-AI
-大模型
-LLM
-论文
-论文写作
-学术写作
-AI绘图
-文生图
-AI画图
-AI PPT
-AI生成PPT
-PPT生成
-AI幻灯片
-图像生成
-AIGC
-stable diffusion
-midjourney
-comfyui
-绘图模型
-科研
-学术
-论文润色
-文献
+医学论文写作
+SCI润色
+医学学术写作
+论文框架
+文献综述
+文献检索
+参考文献管理
+Paperpal
+Writefull
+Trinka
+Elicit
+SciSpace
+Jenni AI
+Academic skill
+科研配图
+医学绘图
+期刊投稿
+稿件润色
+Manuscript
+medical writing
+scientific writing
+literature review
+citation
+paraphrase
+医学科研AI
+医学文献助手
+iThenticate
+查重
