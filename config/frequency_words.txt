@@ -1,4 +1,23 @@
 AI
+大模型
 LLM
-arXiv
-HuggingFace
+论文
+论文写作
+学术写作
+AI绘图
+文生图
+AI画图
+AI PPT
+AI生成PPT
+PPT生成
+AI幻灯片
+图像生成
+AIGC
+stable diffusion
+midjourney
+comfyui
+绘图模型
+科研
+学术
+论文润色
+文献
