@@ -111,20 +111,21 @@ platforms:
 # max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: true                        # 是否启用 RSS 抓取（true=启用，false=关闭）
+  enabled: true                       # 是否启用 RSS 抓取（true=启用, false=关闭）
 
   # 文章新鲜度过滤（过滤超龄旧文章，避免重复推送）
   # 仅在推送阶段过滤，所有文章仍会存入数据库
   freshness_filter:
-    enabled: true                      # 是否启用新鲜度过滤（true=启用，false=关闭）
-    max_age_days: 1                    # 最大文章年龄（天）
-                                       # - 正整数：只推送 N 天内的文章
-                                       # - 0：禁用过滤，推送所有文章
-    # 单个 feed 可配置 max_age_days 覆盖全局设置：
-    # - 不配置：使用全局 freshness_filter.max_age_days（默认 3 天）
-    # - 正整数：覆盖全局设置，只推送此天数内的文章
-    # - 0：禁用此频道的新鲜度过滤，推送所有文章
+    enabled: true                     # 是否启用新鲜度过滤（true=启用, false=关闭）
 
+    max_age_days: 1                   # 最大文章年龄（天）
+                                      # - 正整数：只推送 N 天内的文章
+                                      # - 0：禁用过滤，推送所有文章
+
+  # 单个 feed 可配置 max_age_days 覆盖全局设置：
+  # - 不配置：使用全局 freshness_filter.max_age_days（默认 3 天）
+  # - 正整数：覆盖全局设置，只推送此天数内的文章
+  # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
     - id: "hacker-news"
       name: "Hacker News"
@@ -133,46 +134,13 @@ rss:
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                    # 禁用
-      # max_age_days: 3                 # 示例：推送 3 天内的文章（更新较慢的博客）
-
+      enabled: false                  # 禁用
+      # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
+     
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
-    - id: "huggingface-blog"
-      name: "HuggingFace Blog"
-      url: "https://huggingface.co/blog/feed.xml"
-
-    - id: "arxiv-cs-ai"
-      name: "arXiv cs.AI"
-      url: "https://arxiv.org/rss/cs.AI"
-
-    - id: "arxiv-cs-cl"
-      name: "arXiv cs.CL"
-      url: "https://arxiv.org/rss/cs.CL"
-
-    - id: "arxiv-cs-cv"
-      name: "arXiv cs.CV"
-      url: "https://arxiv.org/rss/cs.CV"
-
-    - id: "github-trending-ai"
-      name: "GitHub Trending AI"
-      url: "https://github.com/trending/ai?since=daily.xml"
-
-    - id: "theverge-ai"
-      name: "The Verge AI"
-      url: "https://www.theverge.com/ai/rss"
-
-    - id: "techcrunch-ai"
-      name: "TechCrunch AI"
-      url: "https://techcrunch.com/category/artificial-intelligence/feed/"
-
-    - id: "lesswrong-ai"
-      name: "LessWrong"
-      url: "https://www.lesswrong.com/rss"
-
-  
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
